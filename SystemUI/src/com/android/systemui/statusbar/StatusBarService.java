@@ -843,6 +843,11 @@ public class StatusBarService extends Service implements CommandQueue.Callbacks 
         }
     }
 
+    /**
+     * 准备拖动
+     * @param y
+     * @param opening
+     */
     void prepareTracking(int y, boolean opening) {
         mTracking = true;
         mVelocityTracker = VelocityTracker.obtain();
